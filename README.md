@@ -1,8 +1,8 @@
 # Feed Reader Testing
 
-[Click here] (https://rajiv-shankar.github.io/Udacity-FEND-Project-6/) to see a web-based application that reads RSS feeds (a pre-existing app).
+This webpage is a web-based application that reads RSS feeds (a pre-existing app).
 
-The `feedreader.js` includes the following tests using Jasmine:
+The `feedreader.js` runs the following tests using Jasmine:
 
 ### SUITE 1: test RSS feeds (allFeeds) JSON
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**TEST 1.1**:  ascertain allFeeds _variable_ is defined and not empty
