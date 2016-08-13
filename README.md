@@ -6,7 +6,9 @@ The `feedreader.js` includes the following tests using Jasmine:
 
 ### SUITE 1: test RSS feeds (allFeeds) JSON
 **TEST 1.1**:  ascertain allFeeds _variable_ is defined and not empty
+
 **TEST 1.2**:  ascertain allFeeds _URL_ is defined and not empty
+
 **TEST 1.3**:  ascertain allFeeds _name_ is defined and not empty
 
 
