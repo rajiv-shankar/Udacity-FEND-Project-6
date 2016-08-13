@@ -100,7 +100,7 @@ $(function() {  // ref: jQuery() or $() searches through the DOM for any element
          })
 
         afterEach(function(done) {
-            loadFeed(0, done);  // then return to the first feed
+            loadFeed(0, done);  // then return to the first feed 
         })
 
     });
