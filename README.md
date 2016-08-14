@@ -28,3 +28,8 @@ The `feedreader.js` runs the following tests using Jasmine:
 ### SUITE 4: test new feed selection
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**TEST 4.1**:  ascertain when a new feed is loaded by the loadFeed function that the content actually changes
 
+
+
+To use this webpage and the testing app:
+1.  Download the files or clone [this repository] (https://github.com/rajiv-shankar/Udacity-FEND-Project-6)
+2.  Open index.html
