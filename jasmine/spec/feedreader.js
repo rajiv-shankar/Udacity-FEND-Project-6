@@ -25,9 +25,9 @@ $(function() {  // ref: jQuery() or $() searches through the DOM for any element
 
         /* TEST 1.3: ascertain allFeeds _name_ is defined and not empty */
         it('have names', function() {
-            allFeeds.forEach(function(eachName) {
-                expect(eachName.url).toBeDefined();
-                expect(eachName.url).not.toBe("");
+            allFeeds.forEach(function(eachFeed) {
+                expect(eachFeed.name).toBeDefined();
+                expect(eachFeed.name).not.toBe("");
             });
         });
 
@@ -46,10 +46,10 @@ $(function() {  // ref: jQuery() or $() searches through the DOM for any element
         /* TEST 2.2: ascertain menu toggles visibility when icon clicked */
         it('toggles visibility when icon clicked', function() {
 
-            $('a.menu-icon-link').click();
+            $('.menu-icon-link').click();
             expect($('body').hasClass('menu-hidden')).toBe(false);
 
-            $('a.menu-icon-link').click();
+            $('.menu-icon-link').click();
             expect($('body').hasClass('menu-hidden')).toBe(true);
 
         });
@@ -64,16 +64,15 @@ $(function() {  // ref: jQuery() or $() searches through the DOM for any element
         /* TEST 3.1: ascertain when loadFeed is executed, there is at least one .entry element within .feed container */
         beforeEach(function(done) {
             loadFeed(Math.floor(Math.random()*allFeeds.length), done);  // load a random feed
-        })
+        });
 
-        it('are present', function(done) {
-            expect($('.feed .entry')).not.toBe("");  // check that it is not empty
-            done();
-         })
+        it('are present', function() {
+            expect($('.feed .entry').html()).toBeDefined();  // check that feed is defined
+         });
 
         afterEach(function(done) {
             loadFeed(0, done);  // then return to the first feed
-        })
+        });
 
     });
 
@@ -93,15 +92,15 @@ $(function() {  // ref: jQuery() or $() searches through the DOM for any element
                 initialFeed = $('.feed').html();
                 loadFeed(feed_B, done);
             });
-        })
+        });
 
-         it('changes content when feed is reloaded', function() {
+        it('changes content when feed is reloaded', function() {
             expect($('.feed').html()).not.toBe(initialFeed);
-         })
+        });
 
         afterEach(function(done) {
             loadFeed(0, done);  // then return to the first feed
-        })
+        });
 
     });
 
