@@ -15,7 +15,7 @@ The `feedreader.js` runs the following tests using Jasmine:
 
 ### SUITE 2: test sidebar (hamburger menu) behavior
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**TEST 2.1**:  ascertain menu element is hidden by default
-  
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**TEST 2.2**:  ascertain menu toggles visibility when icon clicked
 
 
@@ -30,8 +30,8 @@ The `feedreader.js` runs the following tests using Jasmine:
 
 
 
-###To use this webpage and the testing app:
+### To use this webpage and the testing app:
 
-1.  Download the files or clone [this repository] (https://github.com/rajiv-shankar/Udacity-FEND-Project-6)
+1.  Download the files or clone [this repository](https://github.com/rajiv-shankar/Udacity-FEND-Project-6)
 
 2.  Open index.html in a browser
